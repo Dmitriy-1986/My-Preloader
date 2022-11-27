@@ -6,67 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Load</title>
 
+    <link rel="stylesheet" href="style.css">
     <style>
-        * {
-            font-family: sans-serif;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-        }
-
-        .container div img {
-            max-width: 330px;
-        }
-
-        .preloader {
-            background: white;
-            overflow: hidden;
-            position: fixed;
-            left: 0;
-            top: 0;
-            right:0;
-            bottom:0;
-            z-index: 9999;
-            width: 100%;
-            min-height: 100vh;
-
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-
-            font-size: 21px;
-        }
-        
-        .load {
-            animation: loaders 750ms linear 500ms 1 normal both;
-        }
-
-        @keyframes loaders {
-            from {
-                opacity: 1;
-            }
-            to {
-                opacity: 0;
-            }
-        }
-
-        @media (max-width: 1350px) {
-            .container {
-                display: grid;
-                grid-template-columns: 1fr;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .container div img {
-                max-width: 100%;
-            }
-        }
+       
     </style>
 </head>
 <body>
